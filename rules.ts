@@ -61,13 +61,13 @@ const rules: KarabinerRules[] = [
     ),
     // b = "B"rowse
     b: {
-      t: open("https://twitter.com"),
+      c: open("https://twitter.com"),
       // Quarterly "P"lan
       p: open("https://mxstbr.com/cal"),
       y: open("https://news.ycombinator.com"),
       f: open("https://facebook.com"),
       r: open("https://reddit.com"),
-      h: open("https://hashnode.com/draft"),
+      h: open("https://hubstaff.com"),
     },
     // o = "Open" applications
     o: {
@@ -79,7 +79,7 @@ const rules: KarabinerRules[] = [
       b: app("Bitwarden"),
       j: app("Obsidian"),
       k: app("Hubstaff"),
-      ";": app("Docker"),
+      semicolon: app("Docker"),
     },
 
 
@@ -200,6 +200,28 @@ const rules: KarabinerRules[] = [
         },
       ],
     },
+
+
+    f: {
+      description: "Homerow click trigger (cmd + shift + spacebar)",
+      to: [
+        {
+          key_code: "spacebar",
+          modifiers: ["right_command", "right_shift"],
+        },
+      ],
+    },
+
+    j: {
+      description: "Homerow scroll trigger (cmd + shift + j)",
+      to: [
+        {
+          key_code: "j",
+          modifiers: ["right_command", "right_shift"],
+        },
+      ],
+    },
+
 
     // s = "System"
     s: {
