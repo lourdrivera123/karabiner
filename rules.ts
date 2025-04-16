@@ -73,12 +73,12 @@ const rules: KarabinerRules[] = [
     o: {
       a: app("Alacritty"),
       s: app("Slack"),
-      d: app("Windsurf"),
+      d: app("Cursor"),
       f: app("Brave Browser"),
       g: app("Google Chrome"),
       b: app("Bitwarden"),
       j: app("Obsidian"),
-      k: app("Hubstaff"),
+      k: app("Discord"),
       semicolon: app("Docker"),
     },
 
@@ -201,6 +201,16 @@ const rules: KarabinerRules[] = [
       ],
     },
 
+
+    p: {
+      description: "cmd + p",
+      to: [
+        {
+          key_code: "p",
+          modifiers: ["right_command"],
+        },
+      ],
+    },
 
     f: {
       description: "Homerow click trigger (cmd + shift + spacebar)",
